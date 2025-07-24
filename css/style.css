@@ -316,11 +316,102 @@ animation: spin 3s linear infinite;
 /* Latest Deal - End */
 
 
-/* Newsletter - Start */
+/* Footer Newsletter - Start */
+.footer-newsletter{
+    background-image: url(../assets/news-letter-bg.png);
+    height: 533px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-container{
+    max-width: 830px;
+}
+.newsletter-container > h1{
+    color: #ffffff;
+    font-size: 3.125rem;
+}
+
+.subscribe{
+    justify-content: center;
+    gap: 0px;
+}
+
+input, .subscribe button{
+    border: none;
+}
+
+input{
+    width: 644px;
+}
+
+.subscribe-btn{
+    padding: 18px 50px;
+    color: #ffffff;
+    background-color: #E95A08;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+input::placeholder{
+    padding-left: 20px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
 /* Newsletter - End */
 
 
 /* Footer - Start */
+
+.footer-main{
+    display: grid;
+    grid-template-columns: 359px auto 216px;
+    padding: 50px 160px;
+}
+
+.footer-links-container{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+    margin-top: 0px;
+    padding-left: 100px; */
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 32px;
+}
+
+.footer-links-left,
+.footer-links-right{
+    display: grid;
+    row-gap: 32px;
+    margin-top: 0px;
+}
+
+.footer-links-container li{
+    list-style: none;
+    font-size: 1rem;
+}
+
+.footer-links-container li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #6B7280;
+}
+
+/* .footer-company-summary{
+    width: 359px;
+} */
+
+.footer-social-icons{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    height: 45px;
+
+}
 /* Footer - End */
 
 
