@@ -164,6 +164,19 @@ nav{
 
 
 /* Flower Lover - Start */
+
+.flower-plants-lover{
+    margin-top: 210px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flower-plants-lover-container{
+    max-width: 540px;
+}
+.flower-plants-lover-item li{
+    margin-top: 20px;
+}
 /* Flower Lover - End */
 
 
