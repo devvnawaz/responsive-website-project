@@ -177,6 +177,16 @@ nav{
 .flower-plants-lover-item li{
     margin-top: 20px;
 }
+
+.trusted-badge{
+position: absolute;
+margin-left: -250px;
+margin-top: -175px;
+width: 286px;
+height: 286px;
+filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
 /* Flower Lover - End */
 
 
@@ -298,6 +308,24 @@ nav{
     .bottom-margin{
         margin-bottom: 65px;
     }
+
+    .flower-plants-lover{
+        flex-direction: column;
+    }
+
+    .flower-plants-lover img{
+        width: 100%;
+    }
+
+    .trusted-badge{
+        display: none;
+    }
+
+    .flower-plants-lover{
+        margin-top: 42px;
+    }
+
+        
     
 }
 /* Media Queries for Mobile Devices - End */
