@@ -36,6 +36,7 @@ header, main{
 
 /* Global Style - Start */
 
+
 .bottom-margin{
     margin-bottom: 120px;
 }
@@ -412,6 +413,10 @@ input::placeholder{
     height: 45px;
 
 }
+
+.footer-logo{
+    width: 135px;
+}
 /* Footer - End */
 
 
@@ -524,6 +529,7 @@ input::placeholder{
 
     .flower-plants-lover{
         flex-direction: column;
+        margin-bottom: 143px;
     }
 
     .flower-plants-lover img{
@@ -536,6 +542,102 @@ input::placeholder{
 
     .flower-plants-lover{
         margin-top: 42px;
+    }
+
+    .deal-items{
+        display: grid;
+        grid-template-areas:
+        "bloom-plant bloom-plant"
+        "ana-plant ana-plant"
+        "zabo-plant zabo-plant";
+        margin-bottom: 40px;
+        margin-top: 52px;
+    }
+
+    .zabo-plant {
+        font-size: 1.25rem;
+        height: 185px;
+    }
+
+    .zabo-plant,
+    .ana-plant,
+    .bloom-plant {
+        height: 185px;
+    }
+
+    .zabo-plant a{
+        font-size: 16px;
+    }
+
+    .newsletter-container{
+        max-width: 321px;
+    }
+
+    .newsletter-container > h1{
+        font-size: 1.25rem;
+    }
+
+    input{
+        width: 218px;
+    }
+
+    .subscribe-btn{
+        padding: 18px;
+    }
+
+    .subscribe{
+        margin-top: 23px;
+    }
+
+    .footer-newsletter{
+        height: 275px;
+        background-size: cover;
+    }
+
+    .footer-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 359px;
+        margin: 0 auto;
+    }
+
+    .footer-links-container{
+        flex-direction: column;
+    }
+
+    .footer-company-summary > .section-description{
+        margin-top: 16px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .footer-links-container{
+        row-gap: 20px;
+    }
+
+    .footer-links-left,
+    .footer-links-right{
+        margin-bottom: 0px;
+    }
+
+    .footer-social-icons{
+        margin-top: 20px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .footer-logo{
+        width: 180px;
+    }
+
+    .banner img{
+        height: 245px;
     }
 
         
