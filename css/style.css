@@ -1,8 +1,7 @@
 /* Import Google Fonts: Inter and Noto Serif - Start */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* Font Classes */
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -10,141 +9,121 @@
     font-size: 1.375rem;
     font-style: normal;
     color: rgba(0, 0, 0, 0.5);
-  }
-
+}
 
 .noto-serif-font {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-  }
-
+}
 /* Import Google Fonts: Inter and Noto Serif - End */
 
-body{
+body {
     max-width: 1440px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
 
-header, main{
+header, main {
     max-width: 1140px;
     margin: 0 auto;
 }
 
 /* Global Style - Start */
-
-
-.bottom-margin{
+.bottom-margin {
     margin-bottom: 120px;
 }
 
-
-.flex{
+.flex {
     display: flex;
 }
 
-.highlighted-text{
+.highlighted-text {
     color: #E95A08;
 }
 
-.section-title{
+.section-title {
     color: #000000;
     font-size: 3.125rem;
-    
 }
 
-.section-description{
-    
+.section-description {
     max-width: 888px;
     margin: 0 auto;
 }
 
-.centered-text{
+.centered-text {
     text-align: center;
 }
-
 /* Global Style - End */
 
-
-
 /* Nav Style - Start */
-
-nav{
+nav {
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-menu{
+.nav-menu {
     gap: 48px;
 }
 
-.nav-menu li{
+.nav-menu li {
     list-style: none;
 }
 
-.nav-menu a{
+.nav-menu a {
     text-decoration: none;
     font-size: 1rem;
-    color: #8987A1
-    
+    color: #8987A1;
 }
 
-#nav-menu-active{
+#nav-menu-active {
     color: #252432;
     font-weight: 700;
 }
 
-.cart{
+.cart {
     margin-right: 10px;
-    
 }
 
-.nav-menu li:nth-child(4) a{
+.nav-menu li:nth-child(4) a {
     color: #000000;
 }
-
 /* Nav Style - End */
 
-
 /* Banner Style - Start */
-
-.banner{
+.banner {
     align-items: flex-end;
-
 }
 
-.banner-title{
+.banner-title {
     margin-bottom: 13px;
     color: #000000;
     font-size: 4.063rem;
 }
-
-
 /* Banner Style - End */
 
-
 /* Our Plants - Start */
-
-.item{
+.item {
     width: 270px;
 }
-.item-name{
+
+.item-name {
     font-weight: 500;
     color: #111111;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.item-price{
+.item-price {
     font-weight: 700;
     color: #111111;
     margin-bottom: 30px;
 }
 
-.item-button{
+.item-button {
     font-weight: 600;
     font-size: 1rem;
     color: #ffffff;
@@ -154,7 +133,7 @@ nav{
     width: 100%;
 }
 
-.plants-container{
+.plants-container {
     margin-top: 49px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -163,92 +142,84 @@ nav{
 }
 /* Our Plants - End */
 
-
 /* Flower Lover - Start */
-
-.flower-plants-lover{
+.flower-plants-lover {
     margin-top: 210px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 134px;
 }
 
-.flower-plants-lover-container{
+.flower-plants-lover-container {
     max-width: 540px;
 }
-.flower-plants-lover-item li{
+
+.flower-plants-lover-container > h1{
+    margin: 0px auto 0px;
+}
+
+.flower-plants-lover-item li {
     margin-top: 20px;
 }
 
-.trusted-badge{
-position: absolute;
-margin-left: -250px;
-margin-top: -175px;
-width: 286px;
-height: 286px;
-filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
-animation: spin 3s linear infinite;
+.trusted-badge {
+    position: absolute;
+    margin-left: -250px;
+    margin-top: -175px;
+    width: 286px;
+    height: 286px;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+    animation: spin 3s linear infinite;
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
-
+}
 /* Flower Lover - End */
 
-
 /* Latest Deal - Start */
-
-.latest-deals > .section-title{
+.latest-deals > .section-title {
     margin-bottom: 16px;
 }
 
-.bloom-plant{
+.bloom-plant,
+.ana-plant,
+.zabo-plant {
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.bloom-plant {
     background-image: url(../assets/deal-bloom.png);
     grid-area: bloom-plant;
     height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 14px;
     font-size: 1.25rem;
-    color: #ffffff;
-    font-weight: 700;
 }
 
-.ana-plant{
-    position: relative;
+.ana-plant {
     background-image: url(../assets/deal-ana.png);
     grid-area: ana-plant;
     height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 14px;
     font-size: 1.25rem;
-    color: #ffffff;
-    font-weight: 700;
 }
 
-
-   .zabo-plant {
-    position: relative;
+.zabo-plant {
     background-image: url(../assets/deal-zabo.png);
     grid-area: zabo-plant;
     height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 14px;
     font-size: 2.5rem;
-    color: #ffffff;
-    font-weight: 700;
 }
 
 .zabo-plant::after,
 .bloom-plant::after,
 .ana-plant::after {
     content: '';
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -258,67 +229,48 @@ animation: spin 3s linear infinite;
     z-index: 1;
 }
 
-.zabo-plant > * {
-    position: relative;
-    z-index: 2; 
-}
-
-.bloom-plant > * {
-    position: relative;
-    z-index: 2; 
-}
-
+.zabo-plant > *,
+.bloom-plant > *,
 .ana-plant > * {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
-
-
-.deal-items{
+.deal-items {
     display: grid;
     grid-template-areas:
-    "bloom-plant zabo-plant zabo-plant"
-    "ana-plant zabo-plant zabo-plant";
+        "bloom-plant zabo-plant zabo-plant"
+        "ana-plant zabo-plant zabo-plant";
     row-gap: 25px;
     column-gap: 28px;
     margin-top: 120px;
     margin-bottom: 120px;
 }
 
-.deal-item-single{
+.deal-item-single {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
-.bloom-plant a{
+.bloom-plant a,
+.ana-plant a {
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
     text-underline-position: under;
 }
 
-.ana-plant a{
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-    text-underline-position: under;
-}
-
-.zabo-plant a{
+.zabo-plant a {
     color: #ffffff;
     font-size: 28px;
     font-weight: 600;
     text-underline-position: under;
 }
-
 /* Latest Deal - End */
 
-
 /* Footer Newsletter - Start */
-.footer-newsletter{
+.footer-newsletter {
     background-image: url(../assets/news-letter-bg.png);
     height: 533px;
     width: 100%;
@@ -326,28 +278,29 @@ animation: spin 3s linear infinite;
     align-items: center;
 }
 
-.newsletter-container{
+.newsletter-container {
     max-width: 830px;
 }
-.newsletter-container > h1{
+
+.newsletter-container > h1 {
     color: #ffffff;
     font-size: 3.125rem;
 }
 
-.subscribe{
+.subscribe {
     justify-content: center;
     gap: 0px;
 }
 
-input, .subscribe button{
+input, .subscribe button {
     border: none;
 }
 
-input{
+input {
     width: 644px;
 }
 
-.subscribe-btn{
+.subscribe-btn {
     padding: 18px 50px;
     color: #ffffff;
     background-color: #E95A08;
@@ -355,292 +308,251 @@ input{
     font-size: 1rem;
 }
 
-input::placeholder{
+input::placeholder {
     padding-left: 20px;
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.5);
-
 }
-
-/* Newsletter - End */
-
+/* Footer Newsletter - End */
 
 /* Footer - Start */
-
-.footer-main{
+.footer-main {
     display: grid;
     grid-template-columns: 359px auto 216px;
     padding: 50px 160px;
 }
 
-.footer-links-container{
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 32px;
-    margin-top: 0px;
-    padding-left: 100px; */
+.footer-links-container {
     display: flex;
     justify-content: space-evenly;
     row-gap: 32px;
 }
 
 .footer-links-left,
-.footer-links-right{
+.footer-links-right {
     display: grid;
     row-gap: 32px;
     margin-top: 0px;
 }
 
-.footer-links-container li{
+.footer-links-container li {
     list-style: none;
     font-size: 1rem;
 }
 
-.footer-links-container li a{
+.footer-links-container li a {
     font-size: 1rem;
     text-decoration: none;
     color: #6B7280;
 }
 
-/* .footer-company-summary{
-    width: 359px;
-} */
-
-.footer-social-icons{
+.footer-social-icons {
     display: flex;
     gap: 24px;
     align-items: center;
     height: 45px;
-
 }
 
-.footer-logo{
+.footer-logo {
     width: 135px;
 }
 /* Footer - End */
 
-
 /* Media Queries for Mobile Devices - Start */
-
 @media screen and (max-width:393px) {
 
-    /* Global Styles */
-    .section-title{
+    .section-title {
         font-size: 1.5rem;
-        
     }
 
-    .nav-menu li:nth-child(-n+3) a{
-    
+    .nav-menu li:nth-child(-n+3) a {
         display: none;
     }
 
-    .nav-menu li:nth-child(4){
-    
+    .nav-menu li:nth-child(4) {
         width: 113px;
     }
 
-
-    .nav-menu{
+    .nav-menu {
         gap: 0px;
     }
 
-    .logo{
+    .logo {
         max-height: 38px;
     }
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
     }
 
-    nav.bottom-margin{
+    nav.bottom-margin {
         margin-bottom: 28px;
     }
 
-    .content-width-mobile{
+    .content-width-mobile {
         max-width: 361px;
         margin: 0 auto;
     }
 
-    .banner-title{
+    .banner-title {
         font-size: 1.5rem;
         margin-top: 28px;
     }
 
-    .banner-description{
+    .banner-description,
+    .section-description {
         font-size: 0.875rem;
     }
 
-    .section-description{
-        font-size: 0.875rem;
+    .section-description {
         max-width: 336px;
     }
 
-    .title-line-break-mobile{
+    .title-line-break-mobile {
         margin-right: 45px;
     }
 
-
-
-    .plants-container{
-        
+    .plants-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 29px;
         column-gap: 20px;
         max-width: 362px;
-        margin-top: 28px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 28px auto;
     }
 
-    .item{
+    .item {
         width: 171px;
     }
 
-    .item img{
+    .item img {
         width: 100%;
     }
 
     .item-name,
-    .item-description{
+    .item-description {
         font-size: 1rem;
-
     }
 
-    .item-name{
+    .item-name {
         margin-bottom: 10px;
     }
 
-    .item-price{
+    .item-price {
         margin-top: 0px;
     }
 
-    .item-button{
+    .item-button {
         font-weight: 600;
         color: #ffffff;
         background-color: #E95A08;
         padding: 13px 25px;
     }
 
-    .bottom-margin{
+    .bottom-margin {
         margin-bottom: 65px;
     }
 
-    .flower-plants-lover{
+    .flower-plants-lover {
         flex-direction: column;
-        margin-bottom: 143px;
+        margin: 42px auto 143px;
     }
 
-    .flower-plants-lover img{
+    .flower-plants-lover img {
         width: 100%;
     }
 
-    .trusted-badge{
+    .flower-plants-lover-container > h1{
+        margin: 18px auto 0px;
+    }
+
+    .trusted-badge {
         display: none;
     }
 
-    .flower-plants-lover{
-        margin-top: 42px;
-    }
-
-    .deal-items{
+    .deal-items {
         display: grid;
         grid-template-areas:
-        "bloom-plant bloom-plant"
-        "ana-plant ana-plant"
-        "zabo-plant zabo-plant";
-        margin-bottom: 40px;
-        margin-top: 52px;
-    }
-
-    .zabo-plant {
-        font-size: 1.25rem;
-        height: 185px;
+            "bloom-plant bloom-plant"
+            "ana-plant ana-plant"
+            "zabo-plant zabo-plant";
+        margin: 52px 0 40px;
     }
 
     .zabo-plant,
     .ana-plant,
     .bloom-plant {
         height: 185px;
-    }
-
-    .zabo-plant a{
-        font-size: 16px;
-    }
-
-    .newsletter-container{
-        max-width: 321px;
-    }
-
-    .newsletter-container > h1{
         font-size: 1.25rem;
     }
 
-    input{
+    .zabo-plant a {
+        font-size: 16px;
+    }
+
+    .newsletter-container {
+        max-width: 321px;
+    }
+
+    .newsletter-container > h1 {
+        font-size: 1.25rem;
+    }
+
+    input {
         width: 218px;
     }
 
-    .subscribe-btn{
+    .subscribe-btn {
         padding: 18px;
     }
 
-    .subscribe{
+    .subscribe {
         margin-top: 23px;
     }
 
-    .footer-newsletter{
+    .footer-newsletter {
         height: 275px;
         background-size: cover;
     }
 
-    .footer-main{
+    .footer-main {
         display: grid;
         grid-template-columns: 1fr;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding: 50px 0;
         max-width: 359px;
         margin: 0 auto;
     }
 
-    .footer-links-container{
+    .footer-links-container {
         flex-direction: column;
-    }
-
-    .footer-company-summary > .section-description{
-        margin-top: 16px;
-        margin-bottom: 20px;
-        font-size: 1rem;
-    }
-
-    .footer-links-container{
         row-gap: 20px;
     }
 
-    .footer-links-left,
-    .footer-links-right{
-        margin-bottom: 0px;
+    .footer-company-summary > .section-description {
+        margin: 16px 0 20px;
+        font-size: 1rem;
     }
 
-    .footer-social-icons{
+    .footer-links-left,
+    .footer-links-right {
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    .footer-social-icons {
         margin-top: 20px;
     }
 
-    .hide{
+    .hide {
         display: none;
     }
 
-    .footer-logo{
+    .footer-logo {
         width: 180px;
     }
 
-    .banner img{
+    .banner img {
         height: 245px;
     }
-
-        
-    
 }
 /* Media Queries for Mobile Devices - End */
